@@ -1,7 +1,7 @@
 
 // FASE DE ENTRADA: DECLARACION DE VARIABLES:
 const varones = 255;
-const mujeres = 184;f
+const mujeres = 184;
 
 // FASE DE PROCESO: LA LOGICA U OPERACION
 const totalPersonas = varones + mujeres;
