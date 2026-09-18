@@ -6,8 +6,8 @@ const combustible = 100;
 let consumo = combustible / kilometros
 // FASE DE SALIDA
 console.log("Nombre del usuario: ", nombreUsuario );
-console.log("Kilometros Recorridos", kilometros , "Km");
-console.log("Combustible Total", combustible, "Lt");
-console.log("Consumo por kilometro", consumo, "Lt");
+console.log("Kilometros Recorridos:", kilometros , "Km");
+console.log("Combustible Total:", combustible, "Lt");
+console.log("Consumo por kilometro:", consumo, "Lt");
 
 
