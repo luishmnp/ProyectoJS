@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/contactos.css">
+</head>
+<body>
+
+  <div class="building-container">
+    <img src="img/casa.avif" alt="Casa Moderna" class="building-img">
+  </div>
+
+  <div class="background-wave top-wave"></div>
+  <div class="background-wave bottom-wave"></div>
+
+  <main class="contact-wrapper">
+    <section class="info-section">
+      <div class="info-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="info-text">
+          <h3>LLÁMENOS</h3>
+          <p>+51 943 897 358</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="info-text">
+          <h3>UBICACIÓN</h3>
+          <p>121 Rock Street, 21 Avenue, Nueva York, NY 92103-9000</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="icon-box">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+        <div class="info-text">
+          <h3>HORAS DE TRABAJO</h3>
+          <p>Lun - Vie : 10 am - 8 pm | Sáb, Dom : Cerrado</p>
+        </div>
+      </div>
+
+      <p class="attribution">Imagen de <a href="#">Freepik</a></p>
+    </section>
+
+    <section class="form-section">
+      <h2>CONTÁCTENOS</h2>
+        <form action="php/enviar.php" method="POST" class="contact-form" id="contactForm">
+    <div class="form-group">
+        <input type="text" name="nombre" placeholder="Introduce tu nombre" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" placeholder="Introduce tu correo electronico" required>
+    </div>
+    <div class="form-group">
+        <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+    </div>
+    <button type="submit" class="btn-submit">ENVIAR</button>
+    </form>
+    </section>
+  </main>
+
+
+  <!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
