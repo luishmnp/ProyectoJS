@@ -1,3 +1,16 @@
+:root {
+  --primary-color: #ff5e28;
+  --primary-hover: #e04d1c;
+  --bg-color: #f4f4f4;
+  --card-bg: #ffffff;
+  --form-bg: #e5e5e5;
+  --text-dark: #222222;
+  --text-muted: #666666;
+  --text-light: #888888;
+  --input-border: #ffffff;
+  --placeholder-color: #aaaaaa;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +19,7 @@
 }
 
 body {
-  background-color: #f4f4f4;
+  background-color: var(--bg-color);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -33,7 +46,7 @@ body {
 
 .background-wave {
   position: absolute;
-  background-color: #ff5e28;
+  background-color: var(--primary-color);
   z-index: 1;
 }
 
@@ -65,7 +78,7 @@ body {
 }
 
 .info-section {
-  background-color: #ffffff;
+  background-color: var(--card-bg);
   flex: 1;
   padding: 50px 40px;
   display: flex;
@@ -80,7 +93,7 @@ body {
 }
 
 .icon-box {
-  color: #ff5e28;
+  color: var(--primary-color);
   font-size: 1.2rem;
   margin-right: 15px;
   margin-top: 3px;
@@ -89,30 +102,30 @@ body {
 .info-text h3 {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #222222;
+  color: var(--text-dark);
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
 
 .info-text p {
   font-size: 0.85rem;
-  color: #666666;
+  color: var(--text-muted);
   line-height: 1.5;
 }
 
 .attribution {
   margin-top: 20px;
   font-size: 0.8rem;
-  color: #888;
+  color: var(--text-light);
 }
 
 .attribution a {
-  color: #888;
+  color: var(--text-light);
   text-decoration: underline;
 }
 
 .form-section {
-  background-color: #e5e5e5;
+  background-color: var(--form-bg);
   flex: 1;
   padding: 50px 40px;
   display: flex;
@@ -137,22 +150,22 @@ body {
 .form-group textarea {
   width: 100%;
   padding: 12px 15px;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--input-border);
   border-radius: 3px;
-  background-color: #ffffff;
+  background-color: var(--card-bg);
   font-size: 0.85rem;
-  color: #333;
+  color: #333333;
   outline: none;
   transition: border-color 0.3s;
 }
 
 .form-group input::placeholder {
-  color: #aaa;
+  color: var(--placeholder-color);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #ff5e28;
+  border-color: var(--primary-color);
 }
 
 .form-group textarea {
@@ -163,8 +176,8 @@ body {
 .btn-submit {
   width: 100%;
   padding: 12px;
-  background-color: #ff5e28;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--card-bg);
   border: none;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -176,7 +189,7 @@ body {
 }
 
 .btn-submit:hover {
-  background-color: #e04d1c;
+  background-color: var(--primary-hover);
 }
 
 @media (max-width: 768px) {
